@@ -74,7 +74,7 @@ Config.Price = 5000 -- amount of car locks replace at locksmith
 Config = {}
 Config.Blips = {
     {
-        name = "Lanovka",
+        name = "Test",
         blip = 36,
         color = 5,
         type = 4,
