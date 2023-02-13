@@ -1,7 +1,7 @@
 ESX = nil
 
 local text = {}
-local dead = false
+local dead = true
 local textann = {}
 local namecommand = 'ann' -- modify the name of the commandchat here to publish an announce
 

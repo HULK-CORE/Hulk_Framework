@@ -37,7 +37,7 @@ AddEventHandler('radio:set', function()
 				local text, colorbg = ' Freq. '..RadioChannel.. ' MHz ', 'green'
 				msgradio(text, colorbg)
 				RadioOpen = true
-				--TriggerEvent('InteractSound_CL:PlayOnOne', 'police_radio', 0.10)
+				TriggerEvent('InteractSound_CL:PlayOnOne', 'police_radio', 0.10)
 			else
 				local text, colorbg = locale('chanperm'), 'red'
 				RadioChannel = 'OFF'
@@ -50,7 +50,7 @@ AddEventHandler('radio:set', function()
 			exports['pma-voice']:setVoiceProperty('radioEnabled', true)
 			exports['pma-voice']:setVoiceProperty('micClicks', true)
 			exports['pma-voice']:setRadioChannel(RadioChannel)
-			--TriggerEvent('InteractSound_CL:PlayOnOne', 'police_radio', 0.10)
+			TriggerEvent('InteractSound_CL:PlayOnOne', 'police_radio', 0.10)
 			local text, colorbg = ' Freq. '..RadioChannel.. ' MHz ', 'green'
 			msgradio(text, colorbg)
 			RadioOpen = true
@@ -122,10 +122,10 @@ function toggleRadioAnimation(pState)
 	else
 		StopAnimTask(PlayerPedId(), "cellphone@", "cellphone_text_read_base", 1.0)
 		ClearPedTasks(PlayerPedId())
-		--if radioProp ~= 0 then
+		if radioProp ~= 0 then
 			DeleteObject(radioProp)
 			radioProp = 0
-		--end
+		end
 	end
 end
 
