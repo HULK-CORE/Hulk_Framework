@@ -104,6 +104,17 @@ AddEventHandler('esx_handcuffandropeandrope:ropecheck', function()
 				ESX.ShowNotification('~r~Person Cuffed/UnCuffed')
   else
     ESX.ShowNotification('No players nearby')
+    lib.notify({
+        title = 'HULK FRAMEWORK',
+        description = 'No players nearby!',
+        position = 'top',
+        style = {
+            backgroundColor = '#141517',
+            color = '#909296'
+        },
+        icon = 'ban',
+        iconColor = '#C53030'
+    })
 	end
 end)
 
@@ -113,7 +124,17 @@ AddEventHandler('esx_handcuffandropeandrope:nyckelcheck', function()
   if distance ~= -1 and distance <= 3.0 then
       TriggerServerEvent('esx_handcuffandropeandrope:unlocking', GetPlayerServerId(player))
   else
-    ESX.ShowNotification('No players nearby')
+    lib.notify({
+        title = 'HULK FRAMEWORK',
+        description = 'No players nearby!',
+        position = 'top',
+        style = {
+            backgroundColor = '#141517',
+            color = '#909296'
+        },
+        icon = 'ban',
+        iconColor = '#C53030'
+    })
 	end
 end)
 
@@ -143,7 +164,17 @@ AddEventHandler('esx_handcuffandropeandrope:unlockingcuffs', function()
 		TriggerServerEvent('esx_policejob:rope', GetPlayerServerId(player))
 		ESX.ShowNotification('rope unlocked')
 	else
-		ESX.ShowNotification('Your are already lockpicking rope')
+        lib.notify({
+            title = 'HULK FRAMEWORK',
+            description = 'You are already lockpicking rope',
+            position = 'top',
+            style = {
+                backgroundColor = '#141517',
+                color = '#909296'
+            },
+            icon = 'ban',
+            iconColor = '#C53030'
+        })
 	end
 end)
 
