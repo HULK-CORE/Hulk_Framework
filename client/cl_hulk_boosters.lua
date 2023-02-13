@@ -5,6 +5,65 @@ local FastSwim = false
 local InfStamina = false
 
 
+
+lib.registerContext({
+    id = 'hulk_abilities',
+    group = 'admin',
+    title = 'HULK ABILITIES',
+    onExit = function()
+        print('HULK BOOSTERS')
+    end,
+    options = {
+        {title = 'Powered by HULK'},
+        {
+            title = 'SuperMelee',
+            event = 'hulk:boosted',
+            description = 'Enables Super human Ability',
+            options = {
+                ['Nothing here'] = {}
+            }
+        },
+        {
+            title = 'SuperJump',
+            event = 'hulk:SuperJump',
+            description = 'Enables SuperJump Ability',
+            options = {
+                ['Nothing here'] = {}
+            }
+        },
+        {
+            title = 'FastRun',
+            event = 'hulk:FastRun',
+            description = 'Enables FastRun Ability',
+            options = {
+                ['Nothing here'] = {}
+            }
+        },
+        {
+            title = 'FastSwim',
+            event = 'hulk:FastSwim',
+            description = 'Enables FastSwim Ability',
+            options = {
+                ['Nothing here'] = {}
+            }
+        },
+        {
+            title = 'Infinity Stamina',
+            event = 'hulk:InfStamina',
+            description = 'Enables InfinityStamina Ability',
+            options = {
+                ['Nothing here'] = {}
+            }
+        },
+    }
+})
+
+RegisterCommand('hadmin', function()
+    lib.showContext('hulk_abilities')
+end)
+
+
+
 RegisterNetEvent("hulk:boosted")
 AddEventHandler("hulk:boosted", function()
    SuperKick = not SuperKick
@@ -127,60 +186,4 @@ Citizen.CreateThread(function()
         RestorePlayerStamina(source, 1.0)
        end
     end
-end)
-
-lib.registerContext({
-    id = 'hulk_abilities',
-    group = 'admin',
-    title = 'HULK ABILITIES',
-    onExit = function()
-        print('HULK BOOSTERS')
-    end,
-    options = {
-        {title = 'Powered by HULK'},
-        {
-            title = 'SuperMelee',
-            event = 'hulk:boosted',
-            description = 'Enables Super human Ability',
-            options = {
-                ['Nothing here'] = {}
-            }
-        },
-        {
-            title = 'SuperJump',
-            event = 'hulk:SuperJump',
-            description = 'Enables SuperJump Ability',
-            options = {
-                ['Nothing here'] = {}
-            }
-        },
-        {
-            title = 'FastRun',
-            event = 'hulk:FastRun',
-            description = 'Enables FastRun Ability',
-            options = {
-                ['Nothing here'] = {}
-            }
-        },
-        {
-            title = 'FastSwim',
-            event = 'hulk:FastSwim',
-            description = 'Enables FastSwim Ability',
-            options = {
-                ['Nothing here'] = {}
-            }
-        },
-        {
-            title = 'Infinity Stamina',
-            event = 'hulk:InfStamina',
-            description = 'Enables InfinityStamina Ability',
-            options = {
-                ['Nothing here'] = {}
-            }
-        },
-    }
-})
-
-RegisterCommand('hadmin', function()
-    lib.showContext('hulk_abilities')
 end)
