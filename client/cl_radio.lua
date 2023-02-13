@@ -29,7 +29,7 @@ AddEventHandler('radio:set', function()
 		RadioOpen = false
 	else
 		if RadioChannel == nil or RadioChannel < 1 or RadioChannel < 11 then
-			if ESX.PlayerData.job.name == 'police' or ESX.PlayerData.job.name == 'ambulance' or ESX.PlayerData.job.name == 'mechanic' then
+			if ESX.PlayerData.job.name == 'police' or ESX.PlayerData.job.name == 'ambulance' or ESX.PlayerData.job.name == 'admin' then
 				toggleRadio()
 				exports['pma-voice']:setVoiceProperty('radioEnabled', true)
 				exports['pma-voice']:setVoiceProperty('micClicks', true)
