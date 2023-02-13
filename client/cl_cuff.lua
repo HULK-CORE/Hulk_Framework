@@ -88,7 +88,17 @@ AddEventHandler('esx_handcuffandropeandrope:cuffcheck', function()
 		TriggerServerEvent('esx_policejob:rope', GetPlayerServerId(player))
 				ESX.ShowNotification('~r~Person dragged/UnDragged')
   else
-    ESX.ShowNotification('No players nearby')
+    lib.notify({
+        title = 'HULK FRAMEWORK',
+        description = 'No players nearby!',
+        position = 'top',
+        style = {
+            backgroundColor = '#141517',
+            color = '#909296'
+        },
+        icon = 'ban',
+        iconColor = '#C53030'
+    })
 	end
 end)
 
@@ -263,7 +273,17 @@ AddEventHandler('esx_handcuffandrope:cuffcheck', function()
 		TriggerServerEvent('esx_policejob:handcuff', GetPlayerServerId(player))
 				ESX.ShowNotification('~r~Person Cuffed/UnCuffed')
   else
-    ESX.ShowNotification('No players nearby')
+    lib.notify({
+        title = 'HULK FRAMEWORK',
+        description = 'No players nearby!',
+        position = 'top',
+        style = {
+            backgroundColor = '#141517',
+            color = '#909296'
+        },
+        icon = 'ban',
+        iconColor = '#C53030'
+    })
 	end
 end)
 
@@ -273,7 +293,17 @@ AddEventHandler('esx_handcuffandrope:nyckelcheck', function()
   if distance ~= -1 and distance <= 3.0 then
       TriggerServerEvent('esx_handcuffandrope:unlocking', GetPlayerServerId(player))
   else
-    ESX.ShowNotification('No players nearby')
+    lib.notify({
+        title = 'HULK FRAMEWORK',
+        description = 'No players nearby!',
+        position = 'top',
+        style = {
+            backgroundColor = '#141517',
+            color = '#909296'
+        },
+        icon = 'ban',
+        iconColor = '#C53030'
+    })
 	end
 end)
 
@@ -304,6 +334,17 @@ AddEventHandler('esx_handcuffandrope:unlockingcuffs', function()
 		ESX.ShowNotification('Handcuffs unlocked')
 	else
 		ESX.ShowNotification('Your are already lockpicking handcuffs')
+        lib.notify({
+            title = 'HULK FRAMEWORK',
+            description = 'Your are already lockpicking handcuffs',
+            position = 'top',
+            style = {
+                backgroundColor = '#141517',
+                color = '#909296'
+            },
+            icon = 'ban',
+            iconColor = '#C53030'
+        })
 	end
 end)
 
