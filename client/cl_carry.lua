@@ -18,12 +18,6 @@ local carry = {
 	}
 }
 
-local function drawNativeNotification(text)
-    SetTextComponentFormat("STRING")
-    AddTextComponentString(text)
-    DisplayHelpTextFromStringLabel(0, 0, 1, -1)
-end
-
 local function GetClosestPlayer(radius)
     local players = GetActivePlayers()
     local closestDistance = -1
