@@ -5,3 +5,6 @@
 	['rope'] = {
 		label = 'Rope',
 	},
+	['key'] = {
+		label = 'Cuff Keys',
+	},
