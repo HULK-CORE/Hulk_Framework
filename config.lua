@@ -45,24 +45,6 @@ Config.ChanceCamSwitch = 50;
 
 ------------KILL CAM  ENDS HERE---------- 
 
--------------FREE CAR  ESX------------
-
-
-Config.Locations = {
-    ClaimCoords = vector3(-38.770076751709,-1115.8049316406,26.436542510986),
-    SpawnCoords = vector4(-79.366523742676,-1104.2241210938,26.072908401489, 74.13)
-}
-
-Config.Vehicle = {
-    type = "car",
-    model = "t20"
-}
-
-Config.DiscordWebhook = ""
-
-------------FREE CAR  ESX ENDS HERE------------
-
-
 ------------ ROLL DICE -------------
 
 RollDice = {}
@@ -84,4 +66,4 @@ RollDice.Offset = 1.2 --Changes the z axis of the 3d text displayed.
 Config.Locale = 'en'
 Config.Price = 5000 -- amount of car locks replace at locksmith
 
----------- Carlock----------ENDS HERE
+---------- Carlock-----------ENDS HERE
