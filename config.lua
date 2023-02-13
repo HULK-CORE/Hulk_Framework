@@ -87,3 +87,31 @@ Config.Blips = {
         }
     }
 }
+
+
+-------------- CUSTOM PEDS SPAWNER -----------------
+
+Config = Config or {}
+Config.Ped = {
+    {
+    coords = vector4(240.6330, -871.9554, 29.2924, 338.7031),
+    hash = GetHashKey('mp_m_freemode_01'),
+    data = '{"nose_3":0,"chest_3":0,"sex":0,"makeup_4":0,"eye_color":0,"bracelets_1":-1,"jaw_1":0,"blush_1":0,"eyebrows_6":0,"beard_2":10,"sun_2":0,"nose_4":0,"bags_1":0,"complexion_2":0,"chin_3":0,"nose_2":0,"bodyb_2":0,"shoes_2":0,"blemishes_2":0,"chest_1":0,"lipstick_3":0,"tshirt_2":1,"bags_2":0,"blush_3":0,"dad":0,"eyebrows_1":0,"mask_1":0,"arms_2":0,"chain_1":17,"nose_1":0,"eye_squint":0,"mask_2":0,"skin":0,"torso_1":446,"eyebrows_4":0,"bproof_2":0,"lip_thickness":0,"nose_6":0,"watches_1":-1,"lipstick_1":0,"bodyb_1":-1,"shoes_1":10,"bodyb_4":0,"hair_1":11,"moles_2":0,"hair_color_1":0,"makeup_1":0,"chain_2":2,"chest_2":0,"beard_3":0,"complexion_1":0,"skin_md_weight":50,"moles_1":0,"lipstick_4":0,"decals_1":0,"ears_2":0,"lipstick_2":0,"helmet_2":0,"blush_2":0,"age_2":0,"chin_1":0,"cheeks_1":0,"eyebrows_5":0,"hair_2":0,"mom":21,"beard_1":7,"ears_1":-1,"bodyb_3":-1,"jaw_2":0,"cheeks_3":0,"chin_13":0,"blemishes_1":0,"beard_4":1,"makeup_2":0,"glasses_1":5,"age_1":0,"bracelets_2":0,"face":0,"neck_thickness":0,"chin_4":0,"pants_1":147,"torso_2":0,"watches_2":0,"makeup_3":0,"glasses_2":2,"arms":4,"eyebrows_2":0,"tshirt_1":16,"nose_5":0,"bproof_1":0,"helmet_1":-1,"face_md_weight":50,"pants_2":4,"decals_2":0,"chin_2":0,"eyebrows_3":0,"hair_color_2":0,"cheeks_2":0,"sun_1":0}'
+    }, 
+    {
+        coords = vector4(242.5126, -872.6793, 29.2922, 333.7398),
+        hash = GetHashKey('mp_m_freemode_01'),
+        data = '{"helmet_2":0,"moles_2":0,"makeup_2":0,"complexion_2":0,"helmet_1":-1,"chest_2":0,"torso_2":0,"age_2":0,"mask_1":9,"bags_1":0,"sex":0,"face":0,"chin_3":0,"eyebrows_1":0,"hair_color_1":27,"beard_1":7,"cheeks_2":0,"lipstick_4":0,"lip_thickness":0,"eyebrows_5":0,"hair_1":44,"chin_2":0,"skin_md_weight":50,"hair_color_2":0,"ears_1":-1,"tshirt_2":0,"makeup_4":0,"pants_2":4,"shoes_2":2,"watches_1":-1,"ears_2":0,"complexion_1":0,"chain_2":1,"eyebrows_4":0,"beard_3":26,"arms_2":0,"blush_1":0,"eyebrows_2":0,"nose_2":0,"eyebrows_3":0,"decals_2":0,"glasses_1":5,"shoes_1":3,"watches_2":0,"tshirt_1":15,"sun_2":0,"bodyb_4":0,"nose_4":0,"bracelets_2":0,"glasses_2":2,"chain_1":25,"lipstick_3":0,"neck_thickness":0,"chin_13":0,"jaw_1":0,"lipstick_1":0,"chin_4":0,"bproof_2":0,"makeup_1":0,"bodyb_3":-1,"blush_2":0,"bodyb_2":0,"nose_5":0,"beard_4":1,"skin":0,"jaw_2":0,"sun_1":0,"mask_2":0,"lipstick_2":0,"cheeks_3":0,"nose_1":0,"bodyb_1":-1,"eye_color":0,"bags_2":0,"hair_2":0,"eyebrows_6":0,"makeup_3":0,"nose_3":0,"moles_1":0,"chin_1":0,"chest_3":0,"dad":0,"blemishes_2":0,"blemishes_1":0,"bracelets_1":-1,"torso_1":426,"decals_1":0,"chest_1":0,"nose_6":0,"face_md_weight":50,"arms":1,"mom":21,"beard_2":10,"bproof_1":0,"blush_3":0,"cheeks_1":0,"age_1":0,"pants_1":113,"eye_squint":0}'
+    },
+    {
+        coords = vector4(244.4662, -873.4156, 29.2922, 344.0554),
+        hash = GetHashKey('mp_m_freemode_01'),
+        data = '{"helmet_2":0,"moles_2":0,"makeup_2":0,"complexion_2":0,"helmet_1":-1,"chest_2":0,"torso_2":3,"age_2":0,"mask_1":0,"bags_1":0,"sex":0,"face":0,"chin_3":0,"eyebrows_1":0,"hair_color_1":0,"beard_1":16,"cheeks_2":0,"lipstick_4":0,"lip_thickness":0,"eyebrows_5":0,"hair_1":11,"chin_2":0,"skin_md_weight":50,"hair_color_2":0,"ears_1":-1,"tshirt_2":0,"makeup_4":0,"pants_2":8,"shoes_2":3,"watches_1":-1,"ears_2":0,"complexion_1":0,"chain_2":0,"eyebrows_4":0,"beard_3":0,"arms_2":0,"blush_1":0,"eyebrows_2":0,"nose_2":0,"eyebrows_3":0,"decals_2":0,"glasses_1":5,"shoes_1":31,"watches_2":0,"tshirt_1":70,"sun_2":0,"bodyb_4":0,"nose_4":0,"bracelets_2":0,"glasses_2":2,"chain_1":21,"lipstick_3":0,"neck_thickness":0,"chin_13":0,"jaw_1":0,"lipstick_1":0,"chin_4":0,"bproof_2":0,"makeup_1":0,"bodyb_3":-1,"blush_2":0,"bodyb_2":0,"nose_5":0,"beard_4":1,"skin":0,"jaw_2":0,"sun_1":0,"mask_2":0,"lipstick_2":0,"cheeks_3":0,"nose_1":0,"bodyb_1":-1,"eye_color":0,"bags_2":0,"hair_2":0,"eyebrows_6":0,"makeup_3":0,"nose_3":0,"moles_1":0,"chin_1":0,"chest_3":0,"dad":0,"blemishes_2":0,"blemishes_1":0,"bracelets_1":-1,"torso_1":121,"decals_1":0,"chest_1":0,"nose_6":0,"face_md_weight":50,"arms":4,"mom":21,"beard_2":10,"bproof_1":0,"blush_3":0,"cheeks_1":0,"age_1":0,"pants_1":59,"eye_squint":0}'
+    },
+}
+
+
+
+-------------------------------------------------------
+
+
