@@ -1,0 +1,7 @@
+    ['handcuffs'] = {
+		label = 'Hand Cuffs',
+	},
+
+	['rope'] = {
+		label = 'Rope',
+	},
