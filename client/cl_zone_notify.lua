@@ -48,10 +48,16 @@ Citizen.CreateThread(function()
 				NetworkSetFriendlyFireOption(true)
 				ClearPlayerWantedLevel(PlayerId())
 				lib.notify({
-					title = 'Hulk Zones',
+					title = 'HULK FRAMEWORK',
 					description = 'Entered the Gang Territory',
-					type = 'success'
-				})
+					position = 'top',
+					style = {
+                        backgroundColor = '#F5FCF6',
+                        color = '#051207'
+                    },
+                    icon = 'info',
+                    iconColor = '#C53030'
+                })
 				notifIn = true
 				notifOut = false
 			end
@@ -59,10 +65,19 @@ Citizen.CreateThread(function()
 			if not notifOut then
 				NetworkSetFriendlyFireOption(true)
 				lib.notify({
-					title = 'Hulk Zones',
+					title = 'HULK FRAMEWORK',
 					description = 'Left the Gang Territory',
-					type = 'error'
+					position = 'top',
+					style = {
+						backgroundColor = '#141517',
+						color = '#909296'
+					},
+					icon = 'ban',
+					iconColor = '#C53030'
 				})
+				notifIn = true
+				notifOut = false
+			end
 				notifOut = true
 				notifIn = false
 			end
