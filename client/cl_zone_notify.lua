@@ -62,27 +62,27 @@ Citizen.CreateThread(function()
 				notifOut = false
 			end
 		else
-			if not notifOut then
+		    if not notifOut then
 				NetworkSetFriendlyFireOption(true)
 				lib.notify({
 					title = 'HULK FRAMEWORK',
 					description = 'Left the Gang Territory',
 					position = 'top',
 					style = {
-						backgroundColor = '#141517',
-						color = '#909296'
-					},
-					icon = 'ban',
-					iconColor = '#C53030'
-				})
-				notifIn = true
-				notifOut = false
-			end
+                        backgroundColor = '#141517',
+                        color = '#909296'
+                    },
+                    icon = 'ban',
+                    iconColor = '#C53030'
+                })
 				notifOut = true
 				notifIn = false
 			end
 		end
 	end
 end)
+
+
+
 
 
